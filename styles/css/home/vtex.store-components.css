@@ -1,0 +1,48 @@
+.infoCardContainer--main-banner{
+    width: 100%;
+    height: 450px;
+}
+
+.infoCardContainer--jaquetas{
+    margin: 15px;
+}
+.infoCardTextContainer--jaquetas :global(.vtex-button){
+    transform: translateY(220px);
+    width: 240px;
+    background-color: transparent;
+    border-color: #000; 
+    color:#000
+}
+
+
+.infoCardContainer--calcados{
+    margin: 15px;
+}
+.infoCardTextContainer--calcados :global(.vtex-button){
+    transform: translateY(220px);
+    width: 240px;
+    background-color: transparent;
+    border-color: #000; 
+    color:#000
+}
+
+.infoCardContainer--camisas{
+    margin: 15px;
+}
+.infoCardTextContainer--camisas :global(.vtex-button){
+    transform: translateY(220px);
+    width: 240px;
+    background-color: transparent;
+    border-color: #000; 
+    color:#000
+}
+.infoCardContainer--acessorios{
+    margin: 15px;
+}
+.infoCardTextContainer--acessorios :global(.vtex-button){
+    transform: translateY(220px);
+    width: 240px;
+    background-color: transparent;
+    border-color: #000; 
+    color:#000
+}

@@ -1,5 +1,5 @@
 {
-  "vendor": "vtex",
+  "vendor": "codeby",
   "name": "minimumtheme",
   "version": "0.1.1",
   "builders": {
@@ -17,6 +17,7 @@
     "vtex.store-footer": "2.x",
     "vtex.store-components": "3.x",
     "vtex.styleguide": "9.x",
+    "vtex.search": "2.x",
     "vtex.slider": "0.x",
     "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
@@ -44,7 +45,9 @@
     "vtex.iframe": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
-    "vtex.add-to-cart-button": "0.x"
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.store-image": "0.x",
+    "vtex.store-link": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

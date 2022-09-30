@@ -1,0 +1,158 @@
+{
+  "store.home": {
+    "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.mobile" ]
+  },
+  "responsive-layout.desktop": {
+    "children": ["flex-layout.col#home-desktop","flex-layout.row#categories-home"]
+  },
+
+  "responsive-layout.mobile": {
+    "children":["flex-layout.col#home-mobile","list-context.image-list#main-banner", "rich-text#main-banner" ,"flex-layout.row#categories-home"]
+  },
+
+
+  // Banner principal Desktop
+  "flex-layout.row#home-desktop-list-context": {
+    "children": ["list-context.image-list#main-banner"],
+    "props": {
+      "blockClass": ["home-desktop-list-context"]
+    }
+  },
+  "list-context.image-list#main-banner": {
+    "title": "Banner Principal",
+    "children": ["slider-layout#main-banner"],
+    "props": {
+      "maxHeight": 650,
+      "images": []
+    }
+  },
+  // Texto destaque desktop
+  "flex-layout.row#home-destaques-text": {
+    "children": ["rich-text#main-banner"],
+    "props": {
+      "blockClass": ["home-destaques-text"]
+    }
+  },
+  "rich-text#main-banner": {
+    "props": {
+      "text": "Destaques",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "font": "t-heading-1"
+    }
+  },
+
+  // Container de categorias 
+  "flex-layout.row#": {
+    "children": ["flex-layout.row#categories-home"],
+    "props": {
+      "blockClass": [""]
+    }
+  },
+
+  
+  "slider-layout#main-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    },
+    "children": ["info-card#main-banner1", "info-card#main-banner2"]
+  },
+  "info-card#main-banner1": {
+    "props": {
+      "blockClass": "main-banner",
+      "callToActionText": "SHOP NOW",
+      "headline": "NEW ARRIVALS",
+      "id": "info-card-main-banner",
+      "imageUrl": "https://blog.penatrilha.com.br/wp-content/uploads/2020/02/270319_PedradoBa%C3%BA_EV-01178-Editar.png",
+      "subhead": "Confira nossos ultimos lançamentos",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#main-banner2": {
+    "props": {
+      "blockClass": "main-banner",
+      "callToActionText": "SHOP NOW",
+      "headline": "NEW ARRIVALS",
+      "id": "info-card-main-banner",
+      "imageUrl": "https://fitpeople.com/pt/wp-content/uploads/2019/10/rapel-montanha.jpg",
+      "subhead": "Confira nossos ultimos lançamentos",
+      "textAlignment": "center",
+      "textPosition": "left",
+      "isFullModeStyle": true
+    }
+  },
+  
+  "flex-layout.row#categories-home": {
+    "children": ["info-card#jaquetas","info-card#calcados", "info-card#camisas","info-card#acessorios"],
+    "props": {
+      
+      "blockClass": ["categories-home"]
+    }
+  },
+  "info-card#jaquetas": {
+    "props": {
+      
+      "blockClass": "jaquetas",
+      "callToActionText": "Jaquetas",
+      "headline": "",
+      "id": "jaquetas-categoria",
+      "imageUrl": "https://thenorthface.vteximg.com.br/arquivos/Banner_455x553_Jaqueta-out-2.png?v=637995585427600000",
+      "subhead": "",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#calcados": {
+    "props": {
+     
+      "blockClass": "calcados",
+      "callToActionText": "Calçados",
+      "headline": "",
+      "id": "calcados-categoria",
+      "imageUrl": "https://thenorthface.vteximg.com.br/arquivos/Banner_455x553_calcados-out-2.png?v=637995584023000000",
+      "subhead": "",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#camisas": {
+    "props": {
+     
+      "blockClass": "camisas",
+      "callToActionText": "Camisas",
+      "headline": "",
+      "id": "camisas-categoria",
+      "imageUrl": "https://thenorthface.vteximg.com.br/arquivos/Banner_455x553_Camisetas-out-2.png?v=637995584043570000",
+      "subhead": "",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "isFullModeStyle": true
+    }
+  },
+  "info-card#acessorios": {
+    "props": {
+     
+      "blockClass": "acessorios",
+      "callToActionText": "Acessórios",
+      "headline": "",
+      "id": "acessorios-categoria",
+      "imageUrl": "https://thenorthface.vteximg.com.br/arquivos/Banner_455x553_Acessorios--out-2.png?v=637995584018630000",
+      "subhead": "",
+      "textAlignment": "center",
+      "textPosition": "center",
+      "isFullModeStyle": true
+    }
+  }
+  
+}

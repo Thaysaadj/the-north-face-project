@@ -1,0 +1,145 @@
+{
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile", "flex-layout.row#search"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer" : {
+    "children": [
+        "menu-item#new-arrivals",
+        "menu-item#masculino",
+        "menu-item#feminino",
+        "menu-item#acessorios",
+        "menu-item#equipamentos",
+        "menu-item#calcados"
+    ],
+    "props": {
+        "blockClass": "menu-drawer-mobile",
+        "orientation": "vertical"
+    }
+  },
+  "menu-item#new-arrivals":{
+    "props": {
+        "id": "menu-item-new-arrivals",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "New Arrivals",
+          "text": "New Arrival"
+        }
+    }
+  },
+  "menu-item#masculino":{
+    "props": {
+        "id": "menu-item-masculino",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Masculino",
+          "text": "Masculino"
+        }
+    }
+  },
+  "menu-item#feminino": {
+    "props": {
+        "id": "menu-item-feminino",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Feminino",
+          "text": "Feminino"
+        }
+    }
+  },
+  "menu-item#acessorios":{
+    "props": {
+        "id": "menu-item-acessorios",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Acessórios",
+          "text": "Acessórios"
+        }
+    }
+  },
+  "menu-item#equipamentos" :{
+    "props": {
+        "id": "menu-item-equipamentos",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Equipamentos",
+          "text": "Equipamentos"
+        }
+    }
+  },
+  "menu-item#calcados":{
+    "props": {
+        "id": "menu-item-calcados",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "Calçados",
+          "text": "Calçados"
+        }
+    }
+  },
+
+  "logo#mobile": {
+    "title": "Logo Mobile",
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://i.pinimg.com/originals/3a/fb/c2/3afbc2f477fa9faf64b8fcdd1a801680.jpg",
+      "width": "80"
+    }
+  },
+  "flex-layout.row#search":{
+      "children" :["search-bar#search"],
+      "props": {
+        "blockClass": "search-mobile"
+      }
+
+    },
+    "search-bar#search": {
+      "blocks": ["autocomplete-result-list.v2"],
+      "props": {
+        "openAutocompleteOnFocus": true
+      }
+    }
+}
