@@ -4,7 +4,7 @@
   },
   "sticky-layout#desktop": {
     "props": {
-      "blockClass": "sticky-header"
+      "blockClass": ["sticky-header", "sticky-header-desktop-thayyy"]
     },
     "children": ["flex-layout.row#desktop"]
   },
@@ -19,6 +19,7 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
+      "vtex.menu@2.x:menu#desktop",
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",

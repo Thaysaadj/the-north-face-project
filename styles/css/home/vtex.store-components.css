@@ -1,48 +1,55 @@
+.notificationBarContainer{
+    background-color: #3f3f40;
+    color:aliceblue;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
 .infoCardContainer--main-banner{
     width: 100%;
     height: 450px;
 }
 
-.infoCardContainer--jaquetas{
-    margin: 15px;
-}
-.infoCardTextContainer--jaquetas :global(.vtex-button){
-    transform: translateY(220px);
-    width: 240px;
-    background-color: transparent;
-    border-color: #000; 
-    color:#000
-}
-
-
-.infoCardContainer--calcados{
-    margin: 15px;
-}
-.infoCardTextContainer--calcados :global(.vtex-button){
-    transform: translateY(220px);
-    width: 240px;
-    background-color: transparent;
-    border-color: #000; 
-    color:#000
-}
-
-.infoCardContainer--camisas{
-    margin: 15px;
-}
-.infoCardTextContainer--camisas :global(.vtex-button){
-    transform: translateY(220px);
-    width: 240px;
-    background-color: transparent;
-    border-color: #000; 
-    color:#000
-}
+.infoCardContainer--jaquetas,
+.infoCardContainer--calcados,
+.infoCardContainer--camisas,
 .infoCardContainer--acessorios{
-    margin: 15px;
+    margin: 5px;
+    height: 100%;
 }
-.infoCardTextContainer--acessorios :global(.vtex-button){
+
+
+.infoCardTextContainer--jaquetas :global(.vtex-button),
+.infoCardTextContainer--calcados :global(.vtex-button),
+.infoCardTextContainer--camisas :global(.vtex-button),
+.infoCardTextContainer--acessorios :global(.vtex-button)
+{
     transform: translateY(220px);
     width: 240px;
     background-color: transparent;
     border-color: #000; 
-    color:#000
+    color:#000;
+    margin-top: 20px;
+}
+
+.infoCardHeadline--impermeaveis,
+.infoCardHeadline--barracas {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.infoCardContainer--impermeaveis, 
+.infoCardContainer--barracas {
+    height: 100%;
+}
+
+.infoCardCallActionContainer--impermeaveis :global(.vtex-button),
+.infoCardCallActionContainer--barracas :global(.vtex-button)
+{
+    background: #fff;
+    border-color: #fff;
+    color: #000;
+    width: 200px;
 }

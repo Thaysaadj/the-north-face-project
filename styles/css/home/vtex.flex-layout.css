@@ -1,3 +1,21 @@
 .flexRowContent--categories-home{
     height: 400px;
 }
+.flexRow--categories-home :global(.vtex-store-components-3-x-container){
+    max-width: 100vw;
+}
+
+.flexRow--container-impermeaveis-barracas{
+    margin-top: 150px;
+}
+
+.flexCol--impermeaveis {
+    height: 450px;
+    margin-right: 5px;
+}
+
+.flexCol--barracas{
+    height: 450px;
+    margin-left: 5px;
+}
+
