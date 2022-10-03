@@ -1,0 +1,59 @@
+{
+  "vtex.menu@2.x:menu#desktop": {
+    "children": ["menu-item#new-arrivals", "menu-item#masculino"]
+  },
+  "menu-item#new-arrivals": {
+    "props": {
+      "id": "menu-item-new-arrivals",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "New Arrivals",
+        "text": "New Arrivals"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#submenu-new-arrivals"]
+  },
+  "vtex.menu@2.x:submenu#submenu-new-arrivals": {
+    "children": [
+      "vtex.menu@2.x:menu#submenushop"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenushop": {
+    "children": [
+      "menu-item#conteudos-menu-new-arrivals"
+    ]
+  },
+  "menu-item#conteudos-menu-new-arrivals":{
+    "props": {
+        "id": "menu-item-new-arrivals",
+        "type": "custom",
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": false,
+          "tagTitle": "New Arrivals",
+          "text": "New Arrivals"
+        }
+      }
+  },
+
+  "menu-item#masculino": {
+    "props": {
+      "id": "menu-item-masculino",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Masculino",
+        "text": "Masculino"
+      }
+    }
+  }
+}
